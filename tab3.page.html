@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align:center">
+      Sitio Nuevo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item *ngIf=todo>
+    <ion-input placeholder="Nombre" [(ngModel)]=todo.task></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="Descripcion" [(ngModel)]=todo.descripcion ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="Imagen URL"  [(ngModel)]=todo.img></ion-input>
+  </ion-item>
+  
+  <ion-content padding>
+    <ion-button (click)="takePicture()">Tomar Foto</ion-button>
+    <img *ngIf="image" [src]="image" alt="image">
+  </ion-content>
+
+    
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button color="primary" routerDirection="forward" (click)="guardar()">
+      <ion-icon name= "md-checkmark-circle-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+ 
+
+</ion-content>

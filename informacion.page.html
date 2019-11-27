@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>    
+    </ion-buttons>
+    <ion-title>Regresar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- <ion-list lines="none">
+      <img [src]="todo.img">
+        
+    </ion-list> -->
+    <ion-card-header style="text-align:center">
+        <ion-card-title>{{ todo.task }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card class="cardF">
+      <!-- <ion-card-header style="text-align:center">
+        <ion-card-title>{{ todo.task}}</ion-card-title>
+      </ion-card-header> -->
+      <img [src]="todo.img">
+    
+      <ion-card class="cardF2">
+        <!-- <img [src]="todo.img"> -->
+        <ion-card-header>
+          <ion-card-subtitle>Bacalar Quintana Roo</ion-card-subtitle>
+          <!-- <ion-card-title color="light">Madison, WI</ion-card-title> -->
+        </ion-card-header>
+        <ion-card-content >
+          <ion-text class="text">
+          {{ todo.descripcion}}
+          </ion-text>
+        </ion-card-content>
+      </ion-card>
+    </ion-card>
+    
+</ion-content>
