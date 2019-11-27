@@ -1,0 +1,78 @@
+chunk {cordova} cordova.22d0b106f4dfd80eb9b7.js (cordova) 21.1 kB [entry] [rendered]
+Date: 2019-11-25T02:47:57.315Z - Hash: c9b6b432f4d2d903799c - Time: 71081ms
+> cordova.cmd build android
+Preparing Firebase on Android 
+Checking Java JDK and Android SDK versions 
+ANDROID_SDK_ROOT=undefined (recommended setting) 
+ANDROID_HOME=C:\Users\Ebert_DC\AppData\Local\Android\Sdk (DEPRECATED)
+Subproject Path: CordovaLib 
+Subproject Path: app
+Starting a Gradle Daemon (subsequent builds will be faster) 
+
+> Configure project :app 
+WARNING: Configuration 'compile' is obsolete and has been replaced with 'implementation' and 'api'.
+It will be removed at the end of 2018. For more information see: http://d.android.com/r/tools/update-dependency-configurations.html        
+WARNING: API 'variant.getAssemble()' is obsolete and has been replaced with 'variant.getAssembleProvider()'. 
+It will be removed at the end of 2019. 
+For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+To determine what is calling variant.getAssemble(), use -Pandroid.debug.obsoleteApi=true on the command line to display a stack trace.     
+WARNING: API 'variantOutput.getProcessResources()' is obsolete and has been replaced with 'variantOutput.getProcessResourcesProvider()'. 
+It will be removed at the end of 2019.
+For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+To determine what is calling variantOutput.getProcessResources(), use -Pandroid.debug.obsoleteApi=true on the command line to display a sta
+ck trace.
+WARNING: API 'variantOutput.getProcessManifest()' is obsolete and has been replaced with 'variantOutput.getProcessManifestProvider()'.     
+It will be removed at the end of 2019.
+For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+To determine what is calling variantOutput.getProcessManifest(), use -Pandroid.debug.obsoleteApi=true on the command line to display a stac
+k trace.
+WARNING: API 'variant.getMergeResources()' is obsolete and has been replaced with 'variant.getMergeResourcesProvider()'.
+It will be removed at the end of 2019.
+For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+To determine what is calling variant.getMergeResources(), use -Pandroid.debug.obsoleteApi=true on the command line to display a stack trace
+.
+WARNING: API 'variant.getMergeAssets()' is obsolete and has been replaced with 'variant.getMergeAssetsProvider()'. 
+It will be removed at the end of 2019.
+For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+To determine what is calling variant.getMergeAssets(), use -Pandroid.debug.obsoleteApi=true on the command line to display a stack trace.  
+WARNING: API 'variant.getPackageApplication()' is obsolete and has been replaced with 'variant.getPackageApplicationProvider()'.
+It will be removed at the end of 2019.
+For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+To determine what is calling variant.getPackageApplication(), use -Pandroid.debug.obsoleteApi=true on the command line to display a stack t
+race.
+WARNING: API 'variant.getExternalNativeBuildTasks()' is obsolete and has been replaced with 'variant.getExternalNativeBuildProviders()'. 
+It will be removed at the end of 2019.
+For more information, see https://d.android.com/r/tools/task-configuration-avoidance.
+To determine what is calling variant.getExternalNativeBuildTasks(), use -Pandroid.debug.obsoleteApi=true on the command line to display a s
+tack trace.
+
+> Task :app:preBuild UP-TO-DATE 
+> Task :CordovaLib:preBuild UP-TO-DATE
+> Task :CordovaLib:preDebugBuild UP-TO-DATE
+> Task :CordovaLib:checkDebugManifest UP-TO-DATE
+> Task :CordovaLib:processDebugManifest UP-TO-DATE 
+> Task :app:preDebugBuild 
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Failed to capture fingerprint of input files for task ':app:preDebugBuild' property 'compileManifests' during up-to-date check.
+>  FAILED
+3 actionable tasks: 1 executed, 2 up-to-date
+The library com.google.android.gms:play-services-measurement-base is being requested by various other libraries at [[17.0.0,17.0.0], [17.2.
+* What went wrong:
+Failed to capture fingerprint of input files for task ':app:preDebugBuild' property 'compileManifests' during up-to-date check.
+> The library com.google.android.gms:play-services-measurement-base is being requested by various other libraries at [[17.0.0,17.0.0], [17.
+2.1,17.2.1]], but resolves to 17.2.1. Disable the plugin and check your dependencies tree using ./gradlew :app:dependencies.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full 
+insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 29s
+[ERROR] An error occurred while running subprocess cordova.
+
+        cordova.cmd build android exited with exit code 1.
+
+        Re-running this command with the --verbose flag may provide more information.
